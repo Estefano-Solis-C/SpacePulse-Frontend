@@ -1,0 +1,54 @@
+# ==========================================
+# SpacePulse Frontend .gitignore (Angular 18)
+# ==========================================
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node dependencies
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Testing & Coverage
+/coverage
+karma.log
+.nyc_output
+
+# IDE and Editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Environment local overrides
+.env
+.env.local
+.env.*.local
+src/environments/environment.local.ts
+
+# Angular CLI cache
+.angular/cache
