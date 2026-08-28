@@ -16,14 +16,3 @@ Aplicacion disponible en: http://localhost:4200/
 ```bash
 npm run build
 ```
-
-## Subir a GitHub
-
-```bash
-git init
-git add .
-git commit -m "feat: initial commit frontend"
-git branch -M main
-git remote add origin <URL_DEL_REPO_FRONTEND>
-git push -u origin main
-```
