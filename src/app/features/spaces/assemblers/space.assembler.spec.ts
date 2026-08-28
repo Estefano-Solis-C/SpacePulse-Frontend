@@ -1,5 +1,5 @@
-import { SpaceAssembler } from '../../../../src/app/features/spaces/assemblers/space.assembler';
-import { SpaceDto } from '../../../../src/app/features/spaces/models/space.dto';
+import { SpaceAssembler } from './space.assembler';
+import { SpaceDto } from '../models/space.dto';
 
 describe('SpaceAssembler', () => {
   const sampleDto: SpaceDto = {

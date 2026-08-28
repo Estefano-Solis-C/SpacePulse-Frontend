@@ -27,6 +27,10 @@ export const routes: Routes = [
         redirectTo: 'iam/dashboard'
       },
       {
+        path: 'dashboard',
+        loadComponent: () => import('./features/dashboard/dashboard.component').then(m => m.SpacePulseDashboardComponent)
+      },
+      {
         path: 'iam/dashboard',
         loadComponent: () => import('./features/iam/pages/dashboard/dashboard.component').then(m => m.DashboardComponent)
       },

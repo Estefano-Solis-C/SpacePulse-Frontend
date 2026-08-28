@@ -1,5 +1,5 @@
-import { NotificationAssembler } from '../../../../src/app/features/notifications/assemblers/notification.assembler';
-import { NotificationDto } from '../../../../src/app/features/notifications/models/notification.dto';
+import { NotificationAssembler } from './notification.assembler';
+import { NotificationDto } from '../models/notification.dto';
 
 describe('NotificationAssembler', () => {
   const sampleDto: NotificationDto = {

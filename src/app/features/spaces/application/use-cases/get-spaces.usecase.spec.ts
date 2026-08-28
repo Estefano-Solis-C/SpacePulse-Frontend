@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { of, throwError } from 'rxjs';
-import { GetSpacesUseCase } from '../../../../src/app/features/spaces/application/use-cases/get-spaces.usecase';
-import { SPACE_REPOSITORY_TOKEN } from '../../../../src/app/features/spaces/domain/repositories/space.tokens';
-import { SpaceRepository } from '../../../../src/app/features/spaces/domain/repositories/space.repository';
-import { SpaceModel } from '../../../../src/app/features/spaces/models/space.model';
+import { GetSpacesUseCase } from './get-spaces.usecase';
+import { SPACE_REPOSITORY_TOKEN } from '../../domain/repositories/space.tokens';
+import { SpaceRepository } from '../../domain/repositories/space.repository';
+import { SpaceModel } from '../../models/space.model';
 
 describe('GetSpacesUseCase', () => {
   let useCase: GetSpacesUseCase;

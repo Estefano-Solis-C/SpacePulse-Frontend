@@ -1,5 +1,5 @@
-import { IoTDeviceAssembler } from '../../../../src/app/features/iot/assemblers/iot-device.assembler';
-import { IoTDeviceSummaryDto, IoTDeviceDetailExtendedDto } from '../../../../src/app/features/iot/models/iot-device.dto';
+import { IoTDeviceAssembler } from './iot-device.assembler';
+import { IoTDeviceSummaryDto, IoTDeviceDetailExtendedDto } from '../models/iot-device.dto';
 
 describe('IoTDeviceAssembler', () => {
   const summaryDto: IoTDeviceSummaryDto = {

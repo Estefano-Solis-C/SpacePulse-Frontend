@@ -1,5 +1,5 @@
-import { TaskAssembler } from '../../../../src/app/features/tasks/assemblers/task.assembler';
-import { WorkItemDto } from '../../../../src/app/features/tasks/models/task.dto';
+import { TaskAssembler } from './task.assembler';
+import { WorkItemDto } from '../models/task.dto';
 
 describe('TaskAssembler', () => {
   const sampleTaskDto: WorkItemDto = {

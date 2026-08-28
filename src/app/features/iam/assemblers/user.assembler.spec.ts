@@ -1,5 +1,5 @@
-import { UserAssembler } from '../../../../src/app/features/iam/assemblers/user.assembler';
-import { UserDto, LoginResponseDto } from '../../../../src/app/features/iam/models/user.dto';
+import { UserAssembler } from './user.assembler';
+import { UserDto, LoginResponseDto } from '../models/user.dto';
 
 describe('UserAssembler', () => {
   const userDto: UserDto = {

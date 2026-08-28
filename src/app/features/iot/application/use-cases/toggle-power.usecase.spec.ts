@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { of, throwError } from 'rxjs';
-import { TogglePowerUseCase } from '../../../../src/app/features/iot/application/use-cases/toggle-power.usecase';
-import { IOT_REPOSITORY_TOKEN } from '../../../../src/app/features/iot/domain/repositories/iot.tokens';
-import { IoTRepository } from '../../../../src/app/features/iot/domain/repositories/iot.repository';
-import { TogglePowerResponseDto } from '../../../../src/app/features/iot/models/iot-device.dto';
+import { TogglePowerUseCase } from './toggle-power.usecase';
+import { IOT_REPOSITORY_TOKEN } from '../../domain/repositories/iot.tokens';
+import { IoTRepository } from '../../domain/repositories/iot.repository';
+import { TogglePowerResponseDto } from '../../models/iot-device.dto';
 
 describe('TogglePowerUseCase', () => {
   let useCase: TogglePowerUseCase;

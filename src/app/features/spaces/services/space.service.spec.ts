@@ -1,8 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { SpaceService } from '../../../../src/app/features/spaces/services/space.service';
-import { environment } from '../../../../src/environments/environment';
-import { CreateSpaceDto, SpaceDto } from '../../../../src/app/features/spaces/models/space.dto';
+import { SpaceService } from './space.service';
+import { environment } from '../../../../environments/environment';
+import { CreateSpaceDto, SpaceDto } from '../models/space.dto';
 
 describe('SpaceService (HTTP Repository Implementation)', () => {
   let service: SpaceService;
