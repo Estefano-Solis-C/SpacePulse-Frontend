@@ -50,13 +50,13 @@ import { LanguageSwitcherComponent } from '../../../../shared/components/languag
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="auth-form">
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.EMAIL' | translate }}</mat-label>
-                <input matInput type="email" formControlName="email" placeholder="owner@spacepulse.com" />
+                <input matInput type="email" formControlName="email" autocomplete="username" placeholder="owner@spacepulse.com" />
                 <mat-icon matSuffix>email</mat-icon>
               </mat-form-field>
 
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.PASSWORD' | translate }}</mat-label>
-                <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" />
+                <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" autocomplete="current-password" />
                 <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
                   <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
                 </button>

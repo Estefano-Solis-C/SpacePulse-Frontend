@@ -52,19 +52,19 @@ import { LanguageSwitcherComponent } from '../../../../shared/components/languag
             <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="auth-form">
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.FULL_NAME' | translate }}</mat-label>
-                <input matInput formControlName="fullName" placeholder="Carlos Perez" />
+                <input matInput formControlName="fullName" autocomplete="name" placeholder="Carlos Perez" />
                 <mat-icon matSuffix>person</mat-icon>
               </mat-form-field>
 
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.EMAIL' | translate }}</mat-label>
-                <input matInput type="email" formControlName="email" placeholder="carlos@example.com" />
+                <input matInput type="email" formControlName="email" autocomplete="username" placeholder="carlos@example.com" />
                 <mat-icon matSuffix>email</mat-icon>
               </mat-form-field>
 
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.PASSWORD' | translate }}</mat-label>
-                <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" />
+                <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" autocomplete="new-password" />
                 <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
                   <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
                 </button>
@@ -72,7 +72,7 @@ import { LanguageSwitcherComponent } from '../../../../shared/components/languag
 
               <mat-form-field appearance="outline">
                 <mat-label>{{ 'AUTH.PHONE' | translate }}</mat-label>
-                <input matInput formControlName="phone" placeholder="+51 999 888 777" />
+                <input matInput formControlName="phone" autocomplete="tel" placeholder="+51 999 888 777" />
                 <mat-icon matSuffix>phone</mat-icon>
               </mat-form-field>
 
